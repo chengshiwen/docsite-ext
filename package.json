@@ -2,6 +2,7 @@
   "name": "docsite-ext",
   "version": "1.4.0",
   "description": "an extended tool for build static doc site(react)",
+  "repository": "https://github.com/chengshiwen/docsite-ext",
   "bin": {
     "docsite": "./bin/docsite.js"
   },
@@ -20,13 +21,12 @@
     "lint": "eslint --ext .js bin lib || exit 0",
     "test": "npm run test-reset && npm run test-local",
     "test-local": "egg-bin test --timeout 120000",
-    "test-reset": "rimraf test/docsite-project && mkdir test/docsite-project",
-    "postinstall": "opencollective-postinstall"
+    "test-reset": "rimraf test/docsite-project && mkdir test/docsite-project"
   },
   "engines": {
     "node": ">=6.4.0"
   },
-  "author": "liandong.cld",
+  "author": "chengshiwen",
   "license": "MIT",
   "dependencies": {
     "asset-require-hook": "^1.2.0",
@@ -75,9 +75,5 @@
     "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-import": "^2.14.0",
     "prettier": "^1.14.2"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/docsite"
   }
 }

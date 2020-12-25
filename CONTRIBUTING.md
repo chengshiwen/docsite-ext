@@ -1,7 +1,7 @@
 # 代码贡献规范
 
-有任何疑问，欢迎提交 [issue](https://github.com/txd-team/docsite/issues)，
-或者直接修改提交 [PR](https://github.com/txd-team/docsite/pulls)!
+有任何疑问，欢迎提交 [issue](https://github.com/chengshiwen/docsite-ext/issues)，
+或者直接修改提交 [PR](https://github.com/chengshiwen/docsite-ext/pulls)!
 
 ## 代码提交
 

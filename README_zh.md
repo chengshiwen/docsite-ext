@@ -46,8 +46,6 @@ Docsite extension 是 Docsite 的扩展。
 
 [![TX-LCN](http://www.txlcn.org/img/txlcn.png)](http://www.txlcn.org)
 
-
-
 ## 依赖
 
 - node.js > 6.x
