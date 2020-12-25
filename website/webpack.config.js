@@ -17,7 +17,7 @@ fs.readdirSync(targetPath).forEach(page => {
     }
     fs.readdirSync(pagePath).forEach(subPage => {
       const subPagePath = path.join(pagePath, subPage);
-      if (fs.statSync(subPagePath).isDirectory() && fs.existsSync(path.join(subPagePath, 'index.jsx'))) {
+      if (fs.existsSync(path.join(subPagePath, 'index.jsx'))) {
         entries.push(path.join(subPagePath, 'index.jsx'));
       }
     });
