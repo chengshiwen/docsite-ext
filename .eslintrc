@@ -4,10 +4,12 @@
     "ecmaVersion": 2017
   },
   "rules": {
+    "arrow-parens": 0,
+    "space-before-function-paren": 0,
     "import/no-dynamic-require": 0,
     "generator-star-spacing": 0,
     "array-bracket-spacing": 0,
-    "linebreak-style": [0 ,"error", "windows"]
+    "linebreak-style": [0, "error", "windows"]
   },
   "env": {
     "browser": true,

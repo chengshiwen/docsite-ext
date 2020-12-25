@@ -9,12 +9,6 @@ const webpackConfig = require('./webpack.config.js');
 
 const port = siteConfig.port || 8080;
 
-// The development server (the recommended option for development)
-gulp.task('default', ['webpack-dev-server']);
-
-// Production build
-gulp.task('build', ['webpack:build']);
-
 gulp.task('webpack-dev-server', () => {
   // modify some webpack config options
   const myConfig = Object.create(webpackConfig);
@@ -58,3 +52,9 @@ gulp.task('webpack:build', callback => {
     callback();
   });
 });
+
+// The development server (the recommended option for development)
+gulp.task('default', gulp.series('webpack-dev-server'));
+
+// Production build
+gulp.task('build', gulp.series('webpack:build'));

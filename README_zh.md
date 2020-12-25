@@ -44,7 +44,7 @@ Docsite extension 是 Docsite 的扩展。
 
 [![Dragonfly](https://img.alicdn.com/tfs/TB1ThlOucfpK1RjSZFOXXa6nFXa-266-72.png)](https://d7y.io)
 
-[![TX-LCN](http://www.txlcn.org/img/txlcn.png)](http://www.txlcn.org)
+[![DolphinScheduler](https://dolphinscheduler.apache.org/img/ds_gray.svg)](https://dolphinscheduler.apache.org/zh-cn/)
 
 ## 依赖
 
