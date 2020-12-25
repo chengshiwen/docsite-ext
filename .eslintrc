@@ -4,6 +4,8 @@
     "ecmaVersion": 2017
   },
   "rules": {
+    "import/no-dynamic-require": 0,
+    "generator-star-spacing": 0,
     "array-bracket-spacing": 0,
     "linebreak-style": [0 ,"error", "windows"]
   },
