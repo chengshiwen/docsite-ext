@@ -30,6 +30,7 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "^6.26.0",
     "css-loader": "3.6.0",
+    "docsite-ext": "^1.4.2",
     "eslint": "^5.16.0",
     "eslint-config-ali": "^1.0.3",
     "eslint-plugin-import": "*",
