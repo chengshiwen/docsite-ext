@@ -1,6 +1,6 @@
 {
   "name": "docsite-ext",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "an extended tool for build static doc site(react)",
   "repository": "https://github.com/chengshiwen/docsite-ext",
   "bin": {

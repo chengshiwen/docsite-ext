@@ -3,9 +3,9 @@
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/docsite.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/docsite-ext.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/docsite-ext
-[download-image]: https://img.shields.io/npm/dm/docsite.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/docsite-ext.svg?style=flat-square
 [download-url]: https://npmjs.org/package/docsite-ext
 
 # Docsite extension
