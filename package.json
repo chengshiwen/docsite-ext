@@ -15,13 +15,13 @@
   "scripts": {
     "check": "npm run prettier && npm run lint && npm run test",
     "clean": "rimraf coverage",
-    "cov": "npm run test-reset && egg-bin cov --timeout 120000",
+    "cov": "npm run test-reset && egg-bin cov --timeout 300000",
     "ci": "npm run clean && npm run cov",
     "prettier": "prettier --write 'bin/*.js' 'lib/*.js'",
-    "lint": "eslint --ext .js bin lib || exit 0",
+    "lint": "eslint --ext .js bin lib",
     "test": "npm run test-reset && npm run test-local",
-    "test-local": "egg-bin test --timeout 120000",
-    "test-reset": "rimraf test/docsite-project && mkdir test/docsite-project"
+    "test-local": "egg-bin test --timeout 300000",
+    "test-reset": "cd test && rimraf docsite-project && mkdir docsite-project"
   },
   "engines": {
     "node": ">=6.4.0"
@@ -29,6 +29,7 @@
   "author": "chengshiwen",
   "license": "MIT",
   "devDependencies": {
+    "acorn": "^8.0.4",
     "asset-require-hook": "^1.2.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -47,12 +48,12 @@
     "coffee": "^5.4.0",
     "commander": "^2.20.3",
     "css-modules-require-hook": "^4.2.3",
-    "ejs": "^3.1.5",
     "egg-bin": "^4.15.0",
     "egg-ci": "^1.18.0",
+    "ejs": "^3.1.5",
     "eslint": "^5.16.0",
     "eslint-config-egg": "^7.5.1",
-    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
     "fs-extra": "^9.0.1",
     "highlight.js": "^10.5.0",
@@ -66,10 +67,12 @@
     "markdown-it-katex": "^2.0.3",
     "markdown-it-link-attributes": "^2.0.0",
     "markdown-it-replace-link": "^1.0.1",
+    "mocha": "^5.2.0",
     "node-sass": "^4.14.1",
     "prettier": "^1.19.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
     "shelljs": "^0.8.4"
   }
 }

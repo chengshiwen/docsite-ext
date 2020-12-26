@@ -1,6 +1,5 @@
 environment:
   matrix:
-    - nodejs_version: '8'
     - nodejs_version: '10'
     - nodejs_version: '12'
     - nodejs_version: '14'
@@ -12,6 +11,7 @@ install:
 test_script:
   - node --version
   - npm --version
+  - npm run lint
   - npm run test
 
 build: off
