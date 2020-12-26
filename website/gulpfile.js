@@ -4,6 +4,7 @@ const gutil = require('gulp-util');
 const webpack = require('webpack');
 const opn = require('opn');
 const path = require('path');
+const fs = require('fs-extra');
 const WebpackDevServer = require('webpack-dev-server');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const siteConfig = require('./site_config/site').default;
@@ -40,12 +41,25 @@ gulp.task('webpack:build', callback => {
       },
     }),
     new webpack.optimize.UglifyJsPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: path.join(__dirname, 'img'),
-        to: path.join(__dirname, 'dist/img')
-      }
-    ])
+    new CopyWebpackPlugin((() => {
+      const entries = ['img'];
+      const pages = fs.readdirSync(path.join(__dirname, './src/pages'));
+      pages.forEach(page => {
+        if (page === 'home') return;
+        if (fs.statSync(path.join(__dirname, './src/pages', page)).isDirectory()) {
+          if (fs.existsSync(path.join(__dirname, page)) && fs.statSync(path.join(__dirname, page)).isDirectory()) {
+            entries.push(page);
+          }
+        }
+      });
+      return entries.map(entry => {
+        return {
+          from: path.join(__dirname, entry),
+          to: path.join(__dirname, 'dist', entry),
+          ignore: ['*.md', '*.markdown']
+        }
+      });
+    })())
   );
 
   // run webpack
