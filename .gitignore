@@ -9,3 +9,9 @@ npm-debug.log
 coverage
 test/docsite-project
 package-lock.json
+/dist/
+/build/
+/en-us/
+/zh-cn/
+/index.html
+/404.html
