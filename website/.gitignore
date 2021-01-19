@@ -3,4 +3,12 @@ node_modules/
 .DS_Store
 npm-debug.log
 *.orig
-md_json
+package-lock.json
+yarn.lock
+/md_json
+/404.html
+/index.html
+/build/
+/dist/
+/en-us/
+/zh-cn/

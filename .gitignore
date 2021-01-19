@@ -9,6 +9,7 @@ npm-debug.log
 coverage
 test/docsite-project
 package-lock.json
+yarn.lock
 /dist/
 /build/
 /en-us/
