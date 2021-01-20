@@ -48,7 +48,7 @@ Docsite extension is an extension of Docsite.
 
 ## Dependency
 
-- node.js > 6.x
+- node.js >= 10.x
 
 ## Usage
 

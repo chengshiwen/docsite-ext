@@ -48,7 +48,7 @@ Docsite extension 是 Docsite 的扩展。
 
 ## 依赖
 
-- node.js > 6.x
+- node.js >= 10.x
 
 ## 快速开始
 
