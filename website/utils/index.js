@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 export const throttle = (fn, delay) => {
   let timer = null;
-  return function(...args) {
+  return function (...args) {
     const context = this;
     clearTimeout(timer);
     timer = setTimeout(() => {
@@ -33,4 +33,4 @@ export const parseJSONStr = (str) => {
   } catch (err) {
     return str;
   }
-}
+};

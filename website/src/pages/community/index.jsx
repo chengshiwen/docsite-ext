@@ -13,7 +13,6 @@ import communityConfig from '../../../site_config/community.jsx';
 import './index.scss';
 
 class Community extends Language {
-
   render() {
     const language = this.getLanguage();
     const dataSource = communityConfig[language];

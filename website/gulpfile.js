@@ -31,14 +31,14 @@ gulp.task('webpack-dev-server', () => {
       colors: true,
       children: false,
     },
-  }).listen(port, '127.0.0.1', err => {
+  }).listen(port, '127.0.0.1', (err) => {
     if (err) throw new gutil.PluginError('webpack-dev-server', err);
     opn(`http://127.0.0.1:${port}/`);
     gutil.log('[webpack-dev-server]', `http://127.0.0.1:${port}/webpack-dev-server/index.html`);
   });
 });
 
-gulp.task('webpack:build', callback => {
+gulp.task('webpack:build', (callback) => {
   // modify some webpack config options
   const myConfig = Object.create(webpackConfig);
   myConfig.output.publicPath = `${siteConfig.rootPath}/build/`;
@@ -70,7 +70,7 @@ gulp.task('webpack:build', callback => {
     new CopyWebpackPlugin((() => {
       const entries = [];
       const pages = fs.readdirSync(path.join(__dirname, './src/pages'));
-      pages.forEach(page => {
+      pages.forEach((page) => {
         if (page === 'home') return;
         if (fs.statSync(path.join(__dirname, './src/pages', page)).isDirectory()) {
           if (fs.existsSync(path.join(__dirname, page)) && fs.statSync(path.join(__dirname, page)).isDirectory()) {
@@ -78,13 +78,11 @@ gulp.task('webpack:build', callback => {
           }
         }
       });
-      return entries.map(entry => {
-        return {
-          from: path.join(__dirname, entry),
-          to: path.join(__dirname, 'dist', entry),
-          ignore: ['*.md', '*.markdown']
-        }
-      });
+      return entries.map(entry => ({
+        from: path.join(__dirname, entry),
+        to: path.join(__dirname, 'dist', entry),
+        ignore: ['*.md', '*.markdown'],
+      }));
     })())
   );
   if (process.env.report_analyzer) {

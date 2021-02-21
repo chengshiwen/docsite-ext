@@ -55,7 +55,7 @@ export default {
           dateStr: 'May 12nd，2018',
           link: '/en-us/blog/blog7.html',
         },
-      ]
+      ],
     },
     contacts: {
       title: 'Talk To Us',
@@ -65,7 +65,7 @@ export default {
           img: '/img/mailinglist.png',
           imgHover: '/img/mailinglist_hover.png',
           title: 'Mailing List',
-          link: ''
+          link: '',
         },
         {
           img: '/img/alibaba.png',
@@ -77,7 +77,7 @@ export default {
           img: '/img/segmentfault.png',
           imgHover: '/img/segmentfault_hover.png',
           title: 'Segment Fault',
-          link: ''
+          link: '',
         },
         {
           img: '/img/weibo.png',
@@ -220,7 +220,7 @@ export default {
           dateStr: 'May 12nd，2018',
           link: '/zh-cn/blog/blog7.html',
         },
-      ]
+      ],
     },
     contacts: {
       title: '联系我们',
@@ -230,7 +230,7 @@ export default {
           img: '/img/mailinglist.png',
           imgHover: '/img/mailinglist_hover.png',
           title: '邮件列表',
-          link: ''
+          link: '',
         },
         {
           img: '/img/alibaba.png',
@@ -242,7 +242,7 @@ export default {
           img: '/img/segmentfault.png',
           imgHover: '/img/segmentfault_hover.png',
           title: 'Segment Fault',
-          link: ''
+          link: '',
         },
         {
           img: '/img/weibo.png',

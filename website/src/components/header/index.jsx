@@ -49,7 +49,6 @@ class Header extends React.Component {
       language: props.language,
       search: siteConfig.defaultSearch,
       searchValue: '',
-      inputVisible: false,
     };
   }
 
@@ -131,7 +130,7 @@ class Header extends React.Component {
           </a>
           {
             siteConfig.defaultSearch ?
-            (
+              (
               <div
                 className={classnames({
                   search: true,
@@ -141,31 +140,31 @@ class Header extends React.Component {
                 <span className="icon-search" onClick={this.toggleSearch} />
                 {
                   searchVisible ?
-                  (
+                    (
                     <div className="search-input">
                       <img src={searchSwitch[search].logo} onClick={this.switchSearch} />
                       <input autoFocus onChange={this.onInputChange} onKeyDown={this.onKeyDown} />
                     </div>
-                  ) : null
+                    ) : null
                 }
               </div>
-            ) : null
+              ) : null
           }
           {
             onLanguageChange !== noop ?
-            (<span
-              className={
-                classnames({
-                  'language-switch': true,
-                  [`language-switch-${type}`]: true,
-                })
-              }
-              onClick={this.switchLang}
-            >
-              {languageSwitch.find(lang => lang.value === language).text}
-            </span>)
-            :
-            null
+              (
+              <span
+                className={
+                  classnames({
+                    'language-switch': true,
+                    [`language-switch-${type}`]: true,
+                  })
+                }
+                onClick={this.switchLang}
+              >
+                {languageSwitch.find(lang => lang.value === language).text}
+              </span>
+              ) : null
           }
           <div
             className={

@@ -9,7 +9,6 @@ import Sidemenu from '../../components/sidemenu';
 import docsConfig from '../../../site_config/docs';
 
 class Docs extends Md2Html(Language) {
-
   render() {
     const language = this.getLanguage();
     const dataSource = docsConfig[language];

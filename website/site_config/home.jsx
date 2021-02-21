@@ -144,8 +144,8 @@ export default {
           img: '/img/feature_maintenance.png',
           title: 'feature6',
           content: 'feature description',
-        }
-      ]
+        },
+      ],
     },
     start: {
       title: 'Quick start',

@@ -10,7 +10,6 @@ import homeConfig from '../../../site_config/home';
 import './index.scss';
 
 class Home extends Language {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -90,7 +89,7 @@ class Home extends Language {
               <h3>{dataSource.start.title}</h3>
               <p>{dataSource.start.desc}</p>
               <a href={getLink(dataSource.start.button.link)} target={dataSource.start.button.link || '_self'}>{dataSource.start.button.text}</a>
-              </div>
+            </div>
             <div className="right-part"><img src={getLink('/img/quick_start.png')} /></div>
           </div>
         </section>
