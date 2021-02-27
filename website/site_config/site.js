@@ -4,6 +4,7 @@ export default {
   port: 8080, // 本地开发服务器的启动端口
   domain: 'dubbo.apache.org', // 站点部署域名，无需协议和path等
   copyToDist: ['img', '.nojekyll'], // 当build发布时，需要额外复制到dist目录的资源，默认有：index.html, 404.html, en-us, zh-cn, build
+  docsLatest: '', // docs的最新版本，当docs有多个版本时支持latest访问，空则不启用此特性
   defaultSearch: 'google', // 默认搜索引擎，baidu或者google
   defaultLanguage: 'en-us',
   'en-us': {
